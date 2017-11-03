@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+</style>
+<body>
+
+<form "steps" onclick=submit> 
+   
+    <div id="question"></div>
+    <div id="choices"></div>
+    <button value="red"></button>
+
+    <div id="answers"></div>
+
+</form>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+//step1,2,3,4,5 <input radio >
+
+
+
+
+var qa = [
+    options, {
+    a1: ["what is your", "a1", "a2", "a3", answer],
+    a2: ["what movie do",name1, name2, name3, answer],
+    a3: ["what is your", "a1", "a2", "a3", answer],
+    a4: ["what is your", "a1", "a2", "a3", answer]
+    }
+]
+
+var i = 0;
+};
+
+
+function renderpage(){
+
+    var question = qa[i][0];
+   var A= qa[i][1];
+   var B= qa[i][2];
+   var C=qa[i][3];
+   var answer=qa[i][4];
+
+    var questionDiv = $("<div class='question'>");
+    var choicesDiv = $("<div class='choices'>");
+  
+    var questionNum = $("<p>").text("Question: " + question);
+
+
+
+    var buttonA = $("<button>").buttons("Question: " + question);
+   var buttonA = $("<button>").buttons("Question: " + question);
+    var buttonB= $("<button>").buttons("Question: " + question);
+    var buttonC = $("<button>").buttons("Question: " + question);
+
+
+    questionDiv.append(questionNum);
+    choicesDiv.append(buttons);
+
+btnA.attr("value", submit)
+
+
+
+///on submit event
+$("#button").click(submit)
+var answers= $("button").val();
+
+function submit () {
+    for (i=0; i<=.length; i++)
+    
+    if ($(this).val(answers) === answer) 
+   
+}
+
+};
+
+renderpage();
+    
+
+
+</script>
+</html>
